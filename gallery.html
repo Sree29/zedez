@@ -1,0 +1,433 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Zedez</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="assets/images/favicon.ico" type="img/x-icon" rel="shortcut icon">
+    <!-- All css files are included here. -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/iconfont.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/helper.css">
+    <link rel="stylesheet" href="assets/css/plugins/plugins.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Modernizr JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .header,
+        .header-mobile {
+            background-color: white !important;
+            /* Solid white before scroll */
+            color: black !important;
+            padding: 5px 0 5px 0 !important;
+            /* Top and bottom padding of 20px */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        @media (min-width: 992px) {
+
+
+            body {
+                padding-top: 110px;
+            }
+        }
+
+        @media (max-width: 991px) {
+
+            body {
+                padding-top: 70px;
+            }
+        }
+    </style>
+    <style>
+        .main-menu ul li a.active {
+            color: #ff6600;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main-wrapper">
+
+        <!--Header section start-->
+        <header class="header header-transparent header-sticky header-absolute d-lg-block d-none">
+            <div class="header-deafult-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2 col-md-4 col-12">
+                            <!--Logo Area Start-->
+                            <div class="logo-area">
+                                <a href="index.html"><img src="./assets/images/logo1.png" alt=""
+                                        style="width: 150px; height: auto;"></a>
+                            </div>
+                            <!--Logo Area End-->
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-4 d-none d-lg-block col-12">
+                            <!--Header Menu Area Start-->
+                            <div class="header-menu-area text-center">
+                                <nav class="main-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a>
+                                        </li>
+                                        <li><a href="about.html">About</a>
+
+                                        <li><a href="gallery.html" class="active">Gallery</a></li>
+
+
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--Header Menu Area End-->
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    </div>
+    </header>
+    <!--Header section end-->
+
+    <!--Header Mobile section start-->
+    <header class="header-mobile d-block d-lg-none">
+        <div class="header-bottom menu-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header-mobile-navigation d-block d-lg-none">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-md-6">
+                                    <div class="header-logo">
+                                        <a href="index.html">
+                                            <img src="./assets/images/logo1.png" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="mobile-navigation text-end">
+                                        <div class="header-icon-wrapper">
+                                            <ul class="icon-list justify-content-end">
+                                                <!-- <li>
+                                                        <div class="header-cart-icon">
+                                                            <a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+                                                        </div>
+                                                    </li> -->
+                                                <li>
+                                                    <a href="javascript:void(0)" class="mobile-menu-icon"
+                                                        id="mobile-menu-trigger"><i class="fa fa-bars"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Mobile Menu start-->
+                <div class="row">
+                    <div class="col-12 d-flex d-lg-none">
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+                <!--Mobile Menu end-->
+
+            </div>
+        </div>
+    </header>
+    <!--Header Mobile section end-->
+
+    <!-- Offcanvas Menu Start -->
+    <div class="offcanvas-mobile-menu d-block d-lg-none" id="offcanvas-mobile-menu">
+        <a href="javascript:void(0)" class="offcanvas-menu-close" id="offcanvas-menu-close-trigger">
+            <i class="fa fa-times"></i>
+        </a>
+
+        <div class="offcanvas-wrapper">
+
+            <div class="offcanvas-inner-content">
+
+                <nav class="offcanvas-navigation">
+                    <ul>
+                        <li class="menu-item-has-children"><a href="#">Home</a>
+
+                        </li>
+                        <li class="menu-item-has-children"><a href="about.html">About</a>
+
+                        </li>
+
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+
+                        <li class="menu-item-has-children"><a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <style>
+        .page-banner-section {
+            width: 100%;
+            height: 350px !important;
+            background-size: cover;
+
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <!-- Page Banner Section Start -->
+    <div class="page-banner-section section bg-image" data-bg="assets/images/bg/13.png">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="page-banner text-start">
+                        <h2 style="color: #fff;">Gallery</h2>
+                        <ul class="page-breadcrumb">
+                            <li><a href="index.html" style="color: #fff;">Home</a></li>
+                            <li style="color: #fff;">Gallery</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Banner Section End -->
+    <!-- Gallery Section Start -->
+    <!-- <div class="gallery-section section pt-60 pb-70"> -->
+        <div class="gallery-section section pt-60 pb-70" 
+     data-aos="fade-up" 
+     data-aos-duration="1500" 
+     data-aos-easing="ease-in-out">
+        <div class="container">
+            <div class="section-title text-center mb-30">
+                <h3>Elevate Your Space with Timeless Comfort</h3>
+                <p>Discover handcrafted furniture that blends luxury and functionality – only at Zedez.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Gallery Item 1 -->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="gallery-item mb-30">
+                    <a href="./assets/images/gallery/L5.jpg" data-lightbox="shop-gallery">
+                        <img src="./assets/images/gallery/L5.jpg" class="img-fluid" alt="Gallery Image 1">
+                    </a>
+                </div>
+            </div>
+            <!-- Gallery Item 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="gallery-item mb-30">
+                    <a href="./assets/images/gallery/L2.jpg" data-lightbox="shop-gallery">
+                        <img src="./assets/images/gallery/L2.jpg" class="img-fluid" alt="Gallery Image 2">
+                    </a>
+                </div>
+            </div>
+            <!-- Gallery Item 3 -->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="gallery-item mb-30">
+                    <a href="./assets/images/gallery/L3.jpg" data-lightbox="shop-gallery">
+                        <img src="./assets/images/gallery/L3.jpg" class="img-fluid" alt="Gallery Image 3">
+                    </a>
+                </div>
+            </div>
+            <!-- Gallery Item 4 -->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="gallery-item mb-30">
+                    <a href="./assets/images/gallery/L6.png" data-lightbox="shop-gallery">
+                        <img src="./assets/images/gallery/L6.png" class="img-fluid" alt="Gallery Image 4">
+                    </a>
+                </div>
+            </div>
+            <!-- Gallery Item 5 -->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="gallery-item mb-30">
+                    <a href="./assets/images/gallery/L7.png" data-lightbox="shop-gallery">
+                        <img src="./assets/images/gallery/L7.png" class="img-fluid" alt="Gallery Image 5">
+                    </a>
+                </div>
+            </div>
+            <!-- Gallery Item 6 -->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="gallery-item mb-30">
+                    <a href="./assets/images/gallery/L8.png" data-lightbox="shop-gallery">
+                        <img src="./assets/images/gallery/L8.png" class="img-fluid" alt="Gallery Image 6">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Gallery Section End -->
+    <style>
+        .section-title p {
+            font-size: 16px;
+            color: #666;
+            margin-top: 10px;
+
+            max-width: 600px;
+            padding-bottom: 30px;
+        }
+
+        .gallery-section {
+            background-color: #fff;
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .gallery-section .section-title h3 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+
+    <!--Footer section start-->
+    <footer class="footer-section section bg-gray">
+
+        <!-- Footer Top Start -->
+        <div class="footer-top pt-20 pb-20">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <!-- Quick Links (Shifted Right) -->
+                    <div class="footer-widget col-lg-2 col-md-6 col-12  text-start">
+                        <h4 class="title" style="color: #fff;"><span class="text">Quick Links</span></h4>
+                        <ul class="ft-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer Text (Same Position) -->
+                    <div class="footer-widget col-lg-5 col-md-6 col-12 text-start" style="padding-left: 0px;">
+                        <p class="m-0">
+
+                            Looking for custom furniture? Contact us today for personalized design solutions!</p>
+                    </div>
+                </div>
+
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom text-center pt-3 pb-2"
+                    style="border-top: none; margin-top: 0; padding-top: 0;">
+                    <p>Designed By<a href=""> Cognetz</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        <style>
+            @media (max-width: 768px) {
+                .footer-top .row {
+                    flex-direction: column;
+                    text-align: left;
+                }
+
+                .footer-widget {
+                    width: 100%;
+                    text-align: left;
+                    padding: 10px;
+                }
+
+                .footer-widget p {
+                    text-align: left;
+                }
+            }
+
+            .footer-top {
+                padding: 40px 40px;
+                background-color: #000;
+                color: #fff;
+            }
+
+            .footer-widget p {
+                color: #fff;
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            .footer-widget ul li a {
+                font-size: 15px;
+                font-weight: 600;
+                text-decoration: none;
+                color: #fff;
+                transition: color 0.3s ease-in-out;
+            }
+
+            .footer-widget ul li a:hover {
+                color: #ff6600 !important;
+            }
+
+            .footer-widget {
+                padding-left: 10px !important;
+            }
+        </style>
+
+
+    </footer>
+    <!--Footer section end-->
+
+    </div>
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!-- All jquery file included here -->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script
+        src="https://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.22&key=AIzaSyDAq7MrCR1A2qIShmjbtLHSKjcEIEBEEwM"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
