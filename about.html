@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Shop || nelson</title>
+    <title>About-Zedez</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
@@ -17,6 +17,44 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Modernizr JS -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        .feature-image img {
+            width: 50px;  /* Adjust size as needed */
+            height: auto;
+        }
+        .main-menu ul li a {
+            color: #5b3818;  /* Sets the text color */
+        }
+        .main-menu ul li a.active {
+            color: black; /* Active page color */
+            
+        }          
+        .single-feature {
+            transition: background-color 0.3s ease-in-out;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .single-feature:hover {
+            background-color: #eadbbe;
+        }
+        .footer-widget .title,
+        .footer-widget .ft-menu li a {
+            color: #ffffff; /* White color */
+            
+            
+        }
+        .footer-widget {
+            color: #ffffff; /* White color */
+        }
+ 
+            .header-logo img {
+width: 120px; /* Adjust width */
+height: 50px; /* Adjust height */
+object-fit: contain; /* Ensures image fits within the dimensions */
+}
+
+    </style>
 </head>
 
 <body>
@@ -31,8 +69,18 @@
                         <div class="col-xl-3 col-lg-2 col-md-4 col-12">
                             <!--Logo Area Start-->
                             <div class="logo-area">
-                                <a href="index.html"><img src="./assets/images/logo1.png" alt="" style="width: 150px; height: auto;"></a>
+                                <a href="index.html">
+                                    <img src="./assets/images/logo2.jpeg" alt="Logo" style="width: 80px; height: 50px;">
+                                </a>
                             </div>
+                            <style>
+                                .logo-area img {
+                                    width: 80px;   /* Adjust width */
+                                    height: 50px;  /* Adjust height */
+                                    object-fit: contain;  /* Ensures proper scaling */
+                                }
+                                
+                            </style>
                             <!--Logo Area End-->
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-4 d-none d-lg-block col-12">
@@ -43,7 +91,7 @@
                                         <li><a href="index.html">Home</a>
                                            
                                         </li>
-                                        <li><a href="about.html">About Us</a>
+                                        <li><a href="about.html" class="active">About Us</a>
                                             
                                         </li>
                                 
@@ -75,7 +123,7 @@
                                     <div class="col-6 col-md-6">
                                         <div class="header-logo">
                                             <a href="index.html">
-                                                <img src="./assets/images/logo1.png" class="img-fluid" alt="">
+                                                <img src="./assets/images/logo2.jpeg" class="img-fluid" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -118,18 +166,18 @@
             <div class="offcanvas-wrapper">
 
                 <div class="offcanvas-inner-content">
-                    <div class="offcanvas-mobile-search-area">
+                    <!-- <div class="offcanvas-mobile-search-area">
                         <form action="#">
                             <input type="search" placeholder="Search ...">
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
-                    </div>
+                    </div> -->
                     <nav class="offcanvas-navigation">
                         <ul>
                             <li class="menu-item-has-children"><a href="index.html">Home</a>
                                
                             </li>
-                            <li class="menu-item-has-children"><a href="about.html">About Us</a>
+                            <li class="menu-item-has-children"><a href="about.html" class="active">About Us</a>
                                
                             </li>
                             <li class="menu-item-has-children"><a href="gallery.html">Gallery</a>
@@ -185,14 +233,14 @@
                     <div class="col-lg-6 col-12">
                         <!--About Us Content Start-->
                         <div class="about-us-content pl-30 pl-md-0 pl-sm-0 pl-xs-0">
-                            <h2>Welcome to Zedez</h2>
+                            <h2 style="color: #5b3818;">Welcome to Zedez</h2>
                             <p>Your trusted destination for high-quality, stylish, and durable furniture. We specialize in
                                 crafting modern, elegant, and functional furniture that transforms homes, offices, and
                                 commercial spaces.</p>
                             <p>Whether you’re looking for luxury sofas, ergonomic office chairs, stylish dining sets, or
                                 customized furniture, Zedez offers designs that blend aesthetics with comfort.</p>
     
-                            <h3>Who We Are</h3>
+                            <h3 style="color: #5b3818;">Who We Are</h3>
                             <p>At Zedez, we believe that furniture is more than just décor—it’s an essential part of your
                                 lifestyle. With years of expertise in furniture design and manufacturing, we create timeless
                                 pieces that enhance your living and working spaces.</p>
@@ -216,9 +264,9 @@
                         <!-- Single Banner Start -->
                         <div class="single-banner-item pt-100 pt-md-80 pt-sm-70 pt-xs-50 pb-120 pb-md-100 pb-sm-90 pb-xs-50 mb-30 bg-image" data-bg="./assets/images/banner/13.png">
                             <div class="sp-banner-content">
-                                <span class="normat-text" style="color: white;">DISCOUNTED UP TO 50%</span>
-                                <h2 class="title" style="color: white;">Zigzag King Chair</h2>
-                                <span class="normat-text" style="color: white;">LIMITED TIME OFEER</span>
+                                <h2 class="title" style="color: white;">Royale Crest Sofa</h2>
+                                <span class="normat-text" style="color: white;">Experience comfort and style like never before</span>
+                               
                             </div>
                         </div>
                         <!-- Single Banner End -->
@@ -229,97 +277,105 @@
         <!-- Banner section End -->
 
 
+        <style>
+            .feature-image img {
+                filter: brightness(0) saturate(100%) invert(22%) sepia(44%) saturate(703%) hue-rotate(8deg) brightness(95%) contrast(95%);
+            }
+            .feature-content h2{
+                color: #5b3818;
+            }
+            
+        </style>
 
+        <!--Features section start-->
+        <div class="features-section section pt-30 pt-lg-15 pt-md-0 pt-sm-0 pt-xs-15">
+            <div class="container">
+                <div class="row">
 
-       <!--Features section start-->
-       <div class="features-section section pt-30 pt-lg-15 pt-md-0 pt-sm-0 pt-xs-15">
-        <div class="container">
-            <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <!-- Single Feature Start -->
+                        <div class="single-feature mb-30">
+                            <div class="feature-image">
+                                <img src="./assets/images/icons/craftsmanship.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="title">Premium Craftsmanship </h4>
+                                <p class="short-desc">Designed with precision and high-quality materials.</p>
+                            </div>
+                        </div>
+                        <!-- Single Feature End -->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <!-- Single Feature Start -->
+                        <div class="single-feature mb-30">
+                            <div class="feature-image">
+                                <img src="./assets/images/icons/eco-cleaning-product.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="title">Eco-Friendly & Sustainable </h4>
+                                <p class="short-desc"> Responsibly sourced materials for a greener future. </p>
+                            </div>
+                        </div>
+                        <!-- Single Feature End -->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <!-- Single Feature Start -->
+                        <div class="single-feature mb-30">
+                            <div class="feature-image">
+                                <img src="./assets/images/icons/chair.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="title">Modern & Timeless Designs</h4>
+                                <p class="short-desc">Stylish furniture that complements any space.</p>
+                            </div>
+                        </div>
+                        <!-- Single Feature End -->
+                    </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <!-- Single Feature Start -->
-                    <div class="single-feature mb-30">
-                        <div class="feature-image">
-                            <img src="./assets/images/icons/feature-1.png" class="img-fluid" alt="">
+                    <div class="col-lg-4 col-md-6">
+                        <!-- Single Feature Start -->
+                        <div class="single-feature mb-30">
+                            <div class="feature-image">
+                                <img src="./assets/images/icons/build.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="title">Customization Available </h4>
+                                <p class="short-desc"> Tailor-made furniture to match your unique needs. </p>
+                            </div>
                         </div>
-                        <div class="feature-content">
-                            <h4 class="title">Premium Craftsmanship </h4>
-                            <p class="short-desc">Designed with precision and high-quality materials.</p>
-                        </div>
+                        <!-- Single Feature End -->
                     </div>
-                    <!-- Single Feature End -->
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <!-- Single Feature Start -->
-                    <div class="single-feature mb-30">
-                        <div class="feature-image">
-                            <img src="./assets/images/icons/feature-2.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="feature-content">
-                            <h4 class="title">Eco-Friendly & Sustainable </h4>
-                            <p class="short-desc"> Responsibly sourced materials for a greener future. </p>
-                        </div>
-                    </div>
-                    <!-- Single Feature End -->
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <!-- Single Feature Start -->
-                    <div class="single-feature mb-30">
-                        <div class="feature-image">
-                            <img src="./assets/images/icons/feature-3.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="feature-content">
-                            <h4 class="title">Modern & Timeless Designs</h4>
-                            <p class="short-desc">Stylish furniture that complements any space.</p>
-                        </div>
-                    </div>
-                    <!-- Single Feature End -->
-                </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <!-- Single Feature Start -->
-                    <div class="single-feature mb-30">
-                        <div class="feature-image">
-                            <img src="./assets/images/icons/feature-2.png" class="img-fluid" alt="">
+                    <div class="col-lg-4 col-md-6">
+                        <!-- Single Feature Start -->
+                        <div class="single-feature mb-30">
+                            <div class="feature-image">
+                                <img src="./assets/images/icons/double-bed.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="title"> Affordable Luxury  </h4>
+                                <p class="short-desc"> High-end designs at competitive prices. </p>
+                            </div>
                         </div>
-                        <div class="feature-content">
-                            <h4 class="title">Customization Available </h4>
-                            <p class="short-desc"> Tailor-made furniture to match your unique needs. </p>
-                        </div>
+                        <!-- Single Feature End -->
                     </div>
-                    <!-- Single Feature End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Single Feature Start -->
-                    <div class="single-feature mb-30">
-                        <div class="feature-image">
-                            <img src="./assets/images/icons/feature-2.png" class="img-fluid" alt="">
+                    <div class="col-lg-4 col-md-6">
+                        <!-- Single Feature Start -->
+                        <div class="single-feature mb-30">
+                            <div class="feature-image">
+                                <img src="./assets/images/icons/delivery-truck.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="title"> Nationwide Delivery</h4>
+                                <p class="short-desc"> Bringing comfort and style to homes and offices across [Country].</p>
+                            </div>
                         </div>
-                        <div class="feature-content">
-                            <h4 class="title"> Affordable Luxury  </h4>
-                            <p class="short-desc"> High-end designs at competitive prices. </p>
-                        </div>
+                        <!-- Single Feature End -->
                     </div>
-                    <!-- Single Feature End -->
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <!-- Single Feature Start -->
-                    <div class="single-feature mb-30">
-                        <div class="feature-image">
-                            <img src="./assets/images/icons/feature-2.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="feature-content">
-                            <h4 class="title"> Nationwide Delivery</h4>
-                            <p class="short-desc"> Bringing comfort and style to homes and offices across [Country].</p>
-                        </div>
-                    </div>
-                    <!-- Single Feature End -->
                 </div>
             </div>
         </div>
-    </div>
-    <!--Features section end-->
+        <!--Features section end-->
 
 
         
@@ -411,11 +467,11 @@
 
        
        <!--Footer section start-->
-       <footer class="footer-section section bg-gray">
+       <footer class="footer-section section bg-gray" >
 
         <!--Footer Top start-->
-        <div class="footer-top section pt-100 pt-lg-80 pt-md-70 pt-sm-60 pt-xs-50 pb-55 pb-lg-35 pb-md-25 pb-sm-15 pb-xs-10">
-            <div class="container">
+        <div class="footer-top section pt-100 pt-lg-80 pt-md-70 pt-sm-60 pt-xs-50 pb-55 pb-lg-35 pb-md-25 pb-sm-15 pb-xs-10" style="background-color:  #5b3818;">
+            <div class="container" >
                 <div class="row">
 
                     <!--Footer Widget start-->
@@ -440,13 +496,15 @@
                     <div class="footer-widget col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
                         <h4 class="title"><span class="text">Information</span></h4>
                         <ul class="ft-menu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Contact</a></li>
+                           
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                            
                         </ul>
                     </div>
+                   
                     <!--Footer Widget end-->
 
                     <!--Footer Widget start-->
@@ -462,14 +520,14 @@
         <!--Footer Top end-->
 
         <!--Footer bottom start-->
-        <div class="footer-bottom section">
+        <div class="footer-bottom section" style="background-color:  #5b3818;">
             <div class="container">
                 <div class="row no-gutters">
                     <div class="col-12 ft-border pt-25 pb-25">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="copyright text-start">
-                                    <p class="copyright">&copy; 2021 <strong>Nelson</strong> Made with <i class="fa fa-heart text-danger" aria-hidden="true"></i> by <a href="https://hasthemes.com/"><strong>HasThemes</strong></a>.</p>
+                                    <p class="copyright" style="color: white;">Designed By<a href="" style="color: white;">   Cognetz</a></p>
                                 </div>
                             </div>
                             
