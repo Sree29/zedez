@@ -219,29 +219,23 @@ object-fit: contain; /* Ensures image fits within the dimensions */
         <!-- Page Banner Section End -->
          <style>
             @media (max-width: 767px) {
-                .about-us-area .container {
-                    padding-left: 0px !important;
-                    padding-right: 0px !important;
+                .about-us-area .container,
+                .banner-section .container,
+                .features-section .container,
+                .testimonial-section .container {
+                    padding-left: 15px !important;
+                    padding-right: 15px !important;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                    max-width: 100% !important;
+                    overflow-x: hidden !important;
+                }
+            
+                body {
+                    overflow-x: hidden !important;
                 }
             }
-            @media (max-width: 767px) {
-                    .banner-section .container {
-                        padding-left: 0px !important;
-                        padding-right: 0px !important;
-                    }
-                }     
-                @media (max-width: 767px) {
-                    .features-section .container {
-                        padding-left: 0px !important;
-                        padding-right: 0px !important;
-                    }
-                }  
-                @media (max-width: 767px) {
-                    .testimonial-section .container {
-                        padding-left: 0px !important;
-                        padding-right: 0px !important;
-                    }
-                } 
+            
          </style>
         <!--About Us Area Start-->
         <div class="about-us-area section pt-90 pt-lg-70 pt-md-60 pt-sm-50 pt-xs-45 pb-70 pb-lg-50 pb-md-60 pb-sm-60 pb-xs-50">
