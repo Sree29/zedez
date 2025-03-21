@@ -93,43 +93,38 @@
             color: #5b3818;
             /* Change this color as needed */
         }
-
-
-       /* Preloader styles */
+/* Preloader Styles */
 #preloader {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: #fff; /* Background color */
-    z-index: 9999;
+    background: white;
     display: flex;
-    align-items: center;
     justify-content: center;
-    animation: hidePreloader 5s ease-out forwards; /* Increased time to 5 seconds */
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
 }
 
-/* Logo animation */
+/* Logo Blinking Animation (3 times) */
 .preloader-logo {
-    width: 100px; /* Adjust logo size */
+    width: 200px; /* Adjust size as needed */
     height: auto;
-    animation: fadeInOut 2s infinite alternate;
+    animation: blink 6s ease-in-out 3; /* Blink 3 times, each cycle lasting 6s */
 }
 
-/* Fade In-Out Animation */
-@keyframes fadeInOut {
-    0% { opacity: 0.5; transform: scale(0.9); }
-    100% { opacity: 1; transform: scale(1); }
+/* Blinking Effect */
+@keyframes blink {
+    0%, 100% { opacity: 0; } /* Start and end invisible */
+    50% { opacity: 1; } /* Fully visible in the middle */
 }
 
-/* Hide Preloader after 5 seconds */
-@keyframes hidePreloader {
-    0% { opacity: 1; visibility: visible; }
-    100% { opacity: 0; visibility: hidden; }
+/* Hide preloader smoothly */
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
 }
-.preloader-logo {
-    width: 400px; /* Increase width */
-    height: auto; /* Maintain aspect ratio */
-}
+
 
     </style>
 </head>
@@ -348,6 +343,12 @@
             overflow-x: hidden !important;
         }
     }
+    .preloader-logo {
+        width: 300px; /* Increase size */
+        height: auto;
+        animation: blink 1.5s infinite;
+    }
+    
     
 </style>
         <!-- Banner section start -->
@@ -1535,6 +1536,15 @@
             <script src="assets/js/plugins/plugins.js"></script>
             <script src="assets/js/main.js"></script>
     
+
+            <script>
+                window.onload = function() {
+                    setTimeout(function() {
+                        document.getElementById("preloader").classList.add("fade-out");
+                    }, 3000); // Adjust time (3000ms = 3s)
+                };
+            </script>
+            
 
 </body>
 
