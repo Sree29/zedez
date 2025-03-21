@@ -112,7 +112,12 @@
     height: auto;
     animation: blink 6s ease-in-out 3; /* Blink 3 times, each cycle lasting 6s */
 }
-
+/* Faster Blinking on Mobile */
+@media screen and (max-width: 768px) {
+    .preloader-logo {
+        animation: blink 3s ease-in-out 2; /* Faster blink (2 times, each cycle 3s) */
+    }
+}
 /* Blinking Effect */
 @keyframes blink {
     0%, 100% { opacity: 0; } /* Start and end invisible */
