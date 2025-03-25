@@ -19,7 +19,7 @@
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <style>
         .main-menu ul li a {
-            color: #5b3818;  /* Sets the text color */
+            color: white;  /* Sets the text color */
         }
         .main-menu ul li a.active {
             color: black; /* Active page color */
@@ -86,7 +86,7 @@
                             <!--Logo Area Start-->
                             <div class="logo-area">
                                 <a href="index.html">
-                                    <img src="./assets/images/logo2.jpeg" alt="Logo" style="width: 120px; height: 100px; object-fit: contain;">
+                                    <img src="./assets/images/logo1.png" alt="Logo" style="width: 80px; height: 50px; object-fit: contain;">
                                 </a>
                             </div>
                             
@@ -141,7 +141,7 @@
                                     <div class="col-6 col-md-6">
                                         <div class="header-logo">
                                             <a href="index.html">
-                                                <img src="./assets/images//logo2.jpeg" class="img-fluid" alt="">
+                                                <img src="./assets/images//logo1.png" class="img-fluid" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -174,7 +174,29 @@
             </div>
         </header>
         <!--Header Mobile section end-->
-
+        <style>
+            .page-banner-section {
+            min-height: 360px; 
+        }
+        
+        </style>
+        <style>
+                                @media (max-width: 992px) { 
+            .header-mobile {
+                background-color: #5b3818; /* Change this to your preferred color */
+                padding: 0px 0;
+            }
+        
+            .header-logo a img {
+                filter: brightness(0) invert(1); /* Optional: Make logo visible on dark backgrounds */
+            }
+        
+            .mobile-menu-icon i {
+                color: white; /* Change menu icon color */
+            }
+        }
+        
+                            </style>
         <!-- Offcanvas Menu Start -->
         <div class="offcanvas-mobile-menu d-block d-lg-none" id="offcanvas-mobile-menu">
             <a href="javascript:void(0)" class="offcanvas-menu-close" id="offcanvas-menu-close-trigger">

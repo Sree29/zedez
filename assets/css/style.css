@@ -915,7 +915,7 @@ blockquote.blockquote .author {
 /*  02. Header CSS
 /*----------------------------------------*/
 header.header {
-  background-color: #ffffff;
+  background-color: #5b3818;
   position: static;
   left: 0;
   top: 0;
@@ -926,7 +926,7 @@ header.header.is-sticky {
   position: fixed !important;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff !important;
+  background-color: #5b3818 !important;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
